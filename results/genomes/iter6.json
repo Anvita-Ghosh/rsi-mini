@@ -1,0 +1,27 @@
+{
+ "name": "iter6",
+ "system_prompt": "You are an expert Python programmer. Solve the task with one self-contained Python function (standard library only; no input(), no printing). Reply with a single ```python code block.",
+ "skills": [
+  {
+   "id": "s1",
+   "category": "general",
+   "keywords": [
+    "hidden tests",
+    "edge cases"
+   ],
+   "tip": "Increase your awareness of common pitfalls and edge cases in problem-solving to pass hidden tests."
+  },
+  {
+   "id": "s2",
+   "category": "general",
+   "keywords": [
+    "hidden tests",
+    "edge cases"
+   ],
+   "tip": "Always consider and test for edge cases when solving problems. Hidden tests often rely on these cases."
+  }
+ ],
+ "max_rounds": 5,
+ "self_tests": false,
+ "top_k_tips": 3
+}

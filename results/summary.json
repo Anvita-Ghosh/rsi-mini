@@ -1,0 +1,432 @@
+{
+ "main": {
+  "dev_n": 100,
+  "baseline_dev_pass": 85,
+  "iterations": 8,
+  "accepted": 1,
+  "rejected": 7,
+  "final_best_dev_pass": 89,
+  "log": [
+   {
+    "iter": 0,
+    "candidate": "baseline",
+    "decision": "baseline",
+    "dev_pass": 85,
+    "dev_n": 100,
+    "best_dev_pass": 85,
+    "delta_dev_pass": null,
+    "meta_tokens": null,
+    "parse_ok": null,
+    "seconds": null
+   },
+   {
+    "iter": 1,
+    "candidate": "iter1",
+    "decision": "reject",
+    "dev_pass": 84,
+    "dev_n": 100,
+    "best_dev_pass": 85,
+    "delta_dev_pass": -1,
+    "meta_tokens": 1746,
+    "parse_ok": true,
+    "seconds": 194.5
+   },
+   {
+    "iter": 2,
+    "candidate": "iter2",
+    "decision": "reject",
+    "dev_pass": 87,
+    "dev_n": 100,
+    "best_dev_pass": 85,
+    "delta_dev_pass": 2,
+    "meta_tokens": 1770,
+    "parse_ok": true,
+    "seconds": 193.2
+   },
+   {
+    "iter": 3,
+    "candidate": "iter3",
+    "decision": "accept",
+    "dev_pass": 89,
+    "dev_n": 100,
+    "best_dev_pass": 89,
+    "delta_dev_pass": 4,
+    "meta_tokens": 1625,
+    "parse_ok": true,
+    "seconds": 306.8
+   },
+   {
+    "iter": 4,
+    "candidate": "iter4",
+    "decision": "reject",
+    "dev_pass": 86,
+    "dev_n": 100,
+    "best_dev_pass": 89,
+    "delta_dev_pass": -3,
+    "meta_tokens": 1705,
+    "parse_ok": true,
+    "seconds": 205.0
+   },
+   {
+    "iter": 5,
+    "candidate": "iter5",
+    "decision": "reject",
+    "dev_pass": 89,
+    "dev_n": 100,
+    "best_dev_pass": 89,
+    "delta_dev_pass": 0,
+    "meta_tokens": 1779,
+    "parse_ok": true,
+    "seconds": 98.3
+   },
+   {
+    "iter": 6,
+    "candidate": "iter6",
+    "decision": "reject",
+    "dev_pass": 86,
+    "dev_n": 100,
+    "best_dev_pass": 89,
+    "delta_dev_pass": -3,
+    "meta_tokens": 1843,
+    "parse_ok": true,
+    "seconds": 211.4
+   },
+   {
+    "iter": 7,
+    "candidate": "iter7",
+    "decision": "reject",
+    "dev_pass": 86,
+    "dev_n": 100,
+    "best_dev_pass": 89,
+    "delta_dev_pass": -3,
+    "meta_tokens": 1877,
+    "parse_ok": true,
+    "seconds": 173.6
+   },
+   {
+    "iter": 8,
+    "candidate": "iter8",
+    "decision": "reject",
+    "dev_pass": 89,
+    "dev_n": 100,
+    "best_dev_pass": 89,
+    "delta_dev_pass": 0,
+    "meta_tokens": 1743,
+    "parse_ok": true,
+    "seconds": 37.6
+   }
+  ],
+  "meta_tokens": 14088,
+  "best_iter": 3
+ },
+ "usage_main": {
+  "agent_prompt_tokens": 572258,
+  "agent_completion_tokens": 227917,
+  "agent_llm_calls": 2174,
+  "meta_agent_tokens": 14088,
+  "total_tokens": 814263,
+  "llm_seconds_summed_over_workers": 9460
+ },
+ "accepted_edits_main": [
+  {
+   "iter": 3,
+   "edits": [
+    {
+     "op": "add_skill",
+     "category": "general",
+     "keywords": [
+      "hidden tests",
+      "edge cases"
+     ],
+     "tip": "Consider edge cases and hidden tests during your solution design."
+    },
+    {
+     "op": "edit_skill",
+     "id": "s1",
+     "tip": "Always test your function with a variety of inputs, including edge cases."
+    },
+    {
+     "op": "set_param",
+     "name": "max_rounds",
+     "value": 4
+    }
+   ]
+  }
+ ],
+ "test": {
+  "model": "qwen2.5-coder:7b",
+  "n_test": 227,
+  "containment": "seatbelt+subprocess",
+  "genomes": {
+   "baseline": {
+    "n": 227,
+    "visible_pass": 199,
+    "hidden_pass": 190,
+    "visible_but_hidden_fail": 9,
+    "visible_rate": 0.8766519823788547,
+    "hidden_rate": 0.8370044052863436,
+    "hidden_ci95": [
+     0.7834184782196747,
+     0.8793736701625925
+    ],
+    "mean_rounds": 1.2863436123348018,
+    "prompt_tokens": 52753,
+    "completion_tokens": 28659,
+    "llm_calls": 292,
+    "llm_seconds": 1232.1,
+    "wall_seconds": 321.2,
+    "genome_hash": "af2cbe74cf"
+   },
+   "best": {
+    "n": 227,
+    "visible_pass": 202,
+    "hidden_pass": 190,
+    "visible_but_hidden_fail": 12,
+    "visible_rate": 0.8898678414096917,
+    "hidden_rate": 0.8370044052863436,
+    "hidden_ci95": [
+     0.7834184782196747,
+     0.8793736701625925
+    ],
+    "mean_rounds": 1.3656387665198237,
+    "prompt_tokens": 76024,
+    "completion_tokens": 31837,
+    "llm_calls": 310,
+    "llm_seconds": 1339.6,
+    "wall_seconds": 350.4,
+    "genome_hash": "d698b74c03"
+   }
+  },
+  "usage_this_process": {
+   "fresh_calls": 602,
+   "fresh_prompt_tokens": 128777,
+   "fresh_completion_tokens": 60496,
+   "cached_calls": 0,
+   "cached_prompt_tokens": 0,
+   "cached_completion_tokens": 0,
+   "fresh_llm_seconds": 2571.7,
+   "cost_usd": 0.0,
+   "cap_usd": 0.0
+  }
+ },
+ "test_paired": {
+  "diff": 0.0,
+  "diff_ci95_bootstrap": [
+   -0.026431718061673992,
+   0.026431718061673992
+  ],
+  "best_only_solved": 4,
+  "baseline_only_solved": 4
+ },
+ "control_shuffled": {
+  "dev_n": 100,
+  "baseline_dev_pass": 85,
+  "iterations": 8,
+  "accepted": 1,
+  "rejected": 7,
+  "final_best_dev_pass": 91,
+  "log": [
+   {
+    "iter": 0,
+    "candidate": "baseline",
+    "decision": "baseline",
+    "dev_pass": 85,
+    "dev_n": 100,
+    "best_dev_pass": 85,
+    "delta_dev_pass": null,
+    "meta_tokens": null,
+    "parse_ok": null,
+    "seconds": null
+   },
+   {
+    "iter": 1,
+    "candidate": "iter1",
+    "decision": "reject",
+    "dev_pass": 86,
+    "dev_n": 100,
+    "best_dev_pass": 85,
+    "delta_dev_pass": 1,
+    "meta_tokens": 1538,
+    "parse_ok": true,
+    "seconds": 191.9
+   },
+   {
+    "iter": 2,
+    "candidate": "iter2",
+    "decision": "reject",
+    "dev_pass": 84,
+    "dev_n": 100,
+    "best_dev_pass": 85,
+    "delta_dev_pass": -1,
+    "meta_tokens": 1625,
+    "parse_ok": true,
+    "seconds": 155.3
+   },
+   {
+    "iter": 3,
+    "candidate": "iter3",
+    "decision": "accept",
+    "dev_pass": 91,
+    "dev_n": 100,
+    "best_dev_pass": 91,
+    "delta_dev_pass": 6,
+    "meta_tokens": 1685,
+    "parse_ok": true,
+    "seconds": 539.9
+   },
+   {
+    "iter": 4,
+    "candidate": "iter4",
+    "decision": "reject",
+    "dev_pass": 90,
+    "dev_n": 100,
+    "best_dev_pass": 91,
+    "delta_dev_pass": -1,
+    "meta_tokens": 1973,
+    "parse_ok": true,
+    "seconds": 279.1
+   },
+   {
+    "iter": 5,
+    "candidate": "iter5",
+    "decision": "reject",
+    "dev_pass": 59,
+    "dev_n": 100,
+    "best_dev_pass": 91,
+    "delta_dev_pass": -32,
+    "meta_tokens": 2086,
+    "parse_ok": true,
+    "seconds": 914.3
+   },
+   {
+    "iter": 6,
+    "candidate": "iter6",
+    "decision": "reject",
+    "dev_pass": 85,
+    "dev_n": 100,
+    "best_dev_pass": 91,
+    "delta_dev_pass": -6,
+    "meta_tokens": 1928,
+    "parse_ok": true,
+    "seconds": 333.1
+   },
+   {
+    "iter": 7,
+    "candidate": "iter7",
+    "decision": "reject",
+    "dev_pass": 90,
+    "dev_n": 100,
+    "best_dev_pass": 91,
+    "delta_dev_pass": -1,
+    "meta_tokens": 2176,
+    "parse_ok": true,
+    "seconds": 174.8
+   },
+   {
+    "iter": 8,
+    "candidate": "iter8",
+    "decision": "reject",
+    "dev_pass": 89,
+    "dev_n": 100,
+    "best_dev_pass": 91,
+    "delta_dev_pass": -2,
+    "meta_tokens": 1964,
+    "parse_ok": true,
+    "seconds": 307.7
+   }
+  ],
+  "meta_tokens": 14975,
+  "best_iter": 3
+ },
+ "usage_control": {
+  "agent_prompt_tokens": 643327,
+  "agent_completion_tokens": 348208,
+  "agent_llm_calls": 1988,
+  "meta_agent_tokens": 14975,
+  "total_tokens": 1006510,
+  "llm_seconds_summed_over_workers": 14332
+ },
+ "accepted_edits_control": [
+  {
+   "iter": 3,
+   "edits": [
+    {
+     "op": "add_skill",
+     "category": "general",
+     "keywords": [
+      "function",
+      "logic",
+      "edge cases"
+     ],
+     "tip": "Always define a function with a clear docstring and handle all edge cases in your code."
+    },
+    {
+     "op": "set_param",
+     "name": "max_rounds",
+     "value": 4
+    },
+    {
+     "op": "set_system_prompt",
+     "value": "You are an expert Python programmer. Solve the task with one self-contained Python function (standard library only; no input(), no printing). Reply with a single ```python code block. Always define a function with a clear docstring and handle all edge cases in your code."
+    }
+   ]
+  }
+ ],
+ "control_shuffled_test": {
+  "model": "qwen2.5-coder:7b",
+  "n_test": 227,
+  "containment": "seatbelt+subprocess",
+  "genomes": {
+   "baseline": {
+    "n": 227,
+    "visible_pass": 199,
+    "hidden_pass": 190,
+    "visible_but_hidden_fail": 9,
+    "visible_rate": 0.8766519823788547,
+    "hidden_rate": 0.8370044052863436,
+    "hidden_ci95": [
+     0.7834184782196747,
+     0.8793736701625925
+    ],
+    "mean_rounds": 1.2863436123348018,
+    "prompt_tokens": 52753,
+    "completion_tokens": 28659,
+    "llm_calls": 292,
+    "llm_seconds": 1232.1,
+    "wall_seconds": 321.2,
+    "genome_hash": "af2cbe74cf"
+   },
+   "best": {
+    "n": 227,
+    "visible_pass": 203,
+    "hidden_pass": 194,
+    "visible_but_hidden_fail": 9,
+    "visible_rate": 0.8942731277533039,
+    "hidden_rate": 0.8546255506607929,
+    "hidden_ci95": [
+     0.8028719595388378,
+     0.8945759874516526
+    ],
+    "mean_rounds": 1.3348017621145374,
+    "prompt_tokens": 92121,
+    "completion_tokens": 57710,
+    "llm_calls": 303,
+    "llm_seconds": 2334.8,
+    "wall_seconds": 599.6,
+    "genome_hash": "c7082b32a6"
+   }
+  },
+  "baseline_reused_from": "results/test_eval.json",
+  "usage_this_process": {
+   "fresh_calls": 303,
+   "fresh_prompt_tokens": 92121,
+   "fresh_completion_tokens": 57710,
+   "cached_calls": 0,
+   "cached_prompt_tokens": 0,
+   "cached_completion_tokens": 0,
+   "fresh_llm_seconds": 2334.8,
+   "cost_usd": 0.0,
+   "cap_usd": 0.0
+  }
+ }
+}

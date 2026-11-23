@@ -1,0 +1,36 @@
+{
+ "name": "iter5",
+ "system_prompt": "You are an expert Python programmer. Solve the task with one self-contained Python function (standard library only; no input(), no printing). Reply with a single ```python code block.",
+ "skills": [
+  {
+   "id": "s1",
+   "category": "general",
+   "keywords": [
+    "hidden tests",
+    "edge cases"
+   ],
+   "tip": "Always test your function with a variety of inputs, including edge cases."
+  },
+  {
+   "id": "s2",
+   "category": "strings",
+   "keywords": [
+    "string",
+    "substring"
+   ],
+   "tip": "When dealing with strings, always consider edge cases such as empty strings, single characters, and special characters."
+  },
+  {
+   "id": "s3",
+   "category": "numbers",
+   "keywords": [
+    "binary",
+    "rotation"
+   ],
+   "tip": "For problems involving rotations of binary strings, ensure you handle all possible rotation counts, including zero and multiples of the string length."
+  }
+ ],
+ "max_rounds": 5,
+ "self_tests": false,
+ "top_k_tips": 3
+}

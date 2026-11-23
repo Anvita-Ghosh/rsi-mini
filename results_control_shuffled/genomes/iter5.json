@@ -1,0 +1,28 @@
+{
+ "name": "iter5",
+ "system_prompt": "You are an expert Python programmer. Solve the task with one self-contained Python function (standard library only; no input(), no printing). Reply with a single ```python code block. Always define a function with a clear docstring and handle all edge cases in your code.",
+ "skills": [
+  {
+   "id": "s1",
+   "category": "general",
+   "keywords": [
+    "function",
+    "logic",
+    "edge cases"
+   ],
+   "tip": "Carefully read the task and example to understand the requirements and edge cases."
+  },
+  {
+   "id": "s2",
+   "category": "general",
+   "keywords": [
+    "assert",
+    "test cases"
+   ],
+   "tip": "Write additional test cases to cover edge cases and hidden assertions."
+  }
+ ],
+ "max_rounds": 4,
+ "self_tests": true,
+ "top_k_tips": 3
+}

@@ -1,0 +1,39 @@
+{
+ "name": "iter7",
+ "system_prompt": "You are an expert Python programmer. Solve the task with one self-contained Python function (standard library only; no input(), no printing). Reply with a single ```python code block. Always define a function with a clear docstring and handle all edge cases in your code.",
+ "skills": [
+  {
+   "id": "s1",
+   "category": "general",
+   "keywords": [
+    "function",
+    "logic",
+    "edge cases"
+   ],
+   "tip": "Always define a function with a clear docstring and handle all edge cases in your code."
+  },
+  {
+   "id": "s2",
+   "category": "lists",
+   "keywords": [
+    "list",
+    "elements",
+    "conversion"
+   ],
+   "tip": "Use list comprehensions and conditionals to convert elements in a list of lists."
+  },
+  {
+   "id": "s3",
+   "category": "dictionaries",
+   "keywords": [
+    "dictionary",
+    "count",
+    "occurrences"
+   ],
+   "tip": "Use dictionary comprehensions and conditionals to count occurrences of elements in a list of tuples."
+  }
+ ],
+ "max_rounds": 4,
+ "self_tests": false,
+ "top_k_tips": 3
+}

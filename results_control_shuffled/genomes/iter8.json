@@ -1,0 +1,39 @@
+{
+ "name": "iter8",
+ "system_prompt": "You are an expert Python programmer. Solve the task with one self-contained Python function (standard library only; no input(), no printing). Reply with a single ```python code block. Always define a function with a clear docstring and handle all edge cases in your code.",
+ "skills": [
+  {
+   "id": "s1",
+   "category": "general",
+   "keywords": [
+    "function",
+    "logic",
+    "edge cases"
+   ],
+   "tip": "Always define a function with a clear docstring and handle all edge cases in your code."
+  },
+  {
+   "id": "s2",
+   "category": "math",
+   "keywords": [
+    "area",
+    "triangle",
+    "radius"
+   ],
+   "tip": "When calculating areas, ensure to handle edge cases such as non-positive inputs."
+  },
+  {
+   "id": "s3",
+   "category": "functions",
+   "keywords": [
+    "sum_series",
+    "perrin",
+    "increasing subsequence"
+   ],
+   "tip": "Ensure functions handle edge cases and return correct values for various inputs."
+  }
+ ],
+ "max_rounds": 4,
+ "self_tests": false,
+ "top_k_tips": 3
+}

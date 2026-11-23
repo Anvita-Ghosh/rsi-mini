@@ -1,0 +1,26 @@
+{
+ "name": "iter2",
+ "system_prompt": "You are an expert Python programmer. Solve the task with one self-contained Python function (standard library only; no input(), no printing). Reply with a single ```python code block.",
+ "skills": [
+  {
+   "id": "s1",
+   "category": "general",
+   "keywords": [
+    "edge cases",
+    "testing"
+   ],
+   "tip": "Always consider edge cases and write tests to cover a range of scenarios."
+  },
+  {
+   "id": "s2",
+   "category": "strings",
+   "keywords": [
+    "string manipulation"
+   ],
+   "tip": "Practice common string manipulation techniques like slicing, concatenation, and iteration."
+  }
+ ],
+ "max_rounds": 5,
+ "self_tests": false,
+ "top_k_tips": 3
+}

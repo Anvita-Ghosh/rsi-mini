@@ -1,0 +1,27 @@
+{
+ "name": "iter1",
+ "system_prompt": "You are an expert Python programmer. Solve the task with one self-contained Python function (standard library only; no input(), no printing). Reply with a single ```python code block.",
+ "skills": [
+  {
+   "id": "s1",
+   "category": "functions",
+   "keywords": [
+    "function",
+    "implementation"
+   ],
+   "tip": "Always ensure your function correctly implements the task description and handles edge cases."
+  },
+  {
+   "id": "s2",
+   "category": "edge_cases",
+   "keywords": [
+    "edge",
+    "case"
+   ],
+   "tip": "Consider edge cases in your function design and implementation."
+  }
+ ],
+ "max_rounds": 5,
+ "self_tests": false,
+ "top_k_tips": 3
+}

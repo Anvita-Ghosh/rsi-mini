@@ -1,0 +1,36 @@
+{
+ "name": "iter6",
+ "system_prompt": "You are an expert Python programmer. Solve the task with one self-contained Python function (standard library only; no input(), no printing). Reply with a single ```python code block. Always define a function with a clear docstring and handle all edge cases in your code.",
+ "skills": [
+  {
+   "id": "s1",
+   "category": "general",
+   "keywords": [
+    "function",
+    "logic",
+    "edge cases"
+   ],
+   "tip": "Always define a function with a clear docstring and handle all edge cases in your code. This includes checking for invalid inputs and providing appropriate error handling."
+  },
+  {
+   "id": "s2",
+   "category": "strings",
+   "keywords": [
+    "string",
+    "substring"
+   ],
+   "tip": "When dealing with strings, always ensure your function handles edge cases like empty strings or substrings."
+  },
+  {
+   "id": "s3",
+   "category": "recursion",
+   "keywords": [
+    "recursion"
+   ],
+   "tip": "When using recursion, make sure to handle the base case and ensure the function progresses towards the base case."
+  }
+ ],
+ "max_rounds": 4,
+ "self_tests": false,
+ "top_k_tips": 3
+}

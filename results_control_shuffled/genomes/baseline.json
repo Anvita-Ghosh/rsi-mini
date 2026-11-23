@@ -1,0 +1,8 @@
+{
+ "name": "baseline",
+ "system_prompt": "You are an expert Python programmer. Solve the task with one self-contained Python function (standard library only; no input(), no printing). Reply with a single ```python code block.",
+ "skills": [],
+ "max_rounds": 3,
+ "self_tests": false,
+ "top_k_tips": 3
+}
