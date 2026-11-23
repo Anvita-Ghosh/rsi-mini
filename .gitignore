@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+.env.*
+!.env.example
+.DS_Store
+tests/_secret_canary.txt
+tests/_write_canary.txt
+# LLM response cache can be large; see README for how it is shared
+cache/
+results_dryrun/
+logs/
